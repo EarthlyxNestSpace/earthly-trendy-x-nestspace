@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Earthly × Nest Space</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Luxury coworking and art-inspired event spaces for creators, innovators, and dreamers. Book Earthly × Nest Space via WhatsApp." />
+  <link rel="preload" as="image" href="hero-bg.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header class="navbar">
-    <div class="logo">🌿 Earthly × Nest</div>
+    <div class="logo">
+      <img src="Logo-Blank1.jpg" alt="Nest Space Ventures Logo" class="logo-small"/>
+    </div>
     <nav>
       <a href="#about">About</a>
       <a href="#gallery">Gallery</a>
@@ -17,31 +21,26 @@
     </nav>
   </header>
 
- <!-- Video Hero -->
-<section class="hero hero-video" id="home" aria-label="Hero: Earthly × Nest Space">
-  <video class="hero-video__media" autoplay muted loop playsinline poster="hero-poster.jpg" id="heroVideo">
-    <source src="hero.mp4" type="video/mp4">
-    <!-- fallback image for old browsers -->
-    <img src="hero-poster.jpg" alt="Earthly × Nest Space hero" />
-  </video>
+  <!-- Video Hero -->
+  <section class="hero hero-video" id="home" aria-label="Hero: Earthly × Nest Space">
+    <video class="hero-video__media" autoplay muted loop playsinline poster="hero-bg.png" id="heroVideo">
+      <source src="hero.mp4" type="video/mp4" />
+      <!-- fallback image -->
+      <img src="hero-bg.png" alt="Earthly × Nest Space hero" />
+    </video>
 
-  <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
 
-  <div class="hero-content">
-    <div class="brand">
-      <img src="nestspace-logo.png" alt="Nest Space logo" class="logo-small"/>
+    <div class="hero-content">
       <h1 class="luxury-text">A Creative Sanctuary for Visionaries</h1>
+      <p class="sub">Luxury coworking and art-inspired spaces for creators, innovators, and dreamers.</p>
+
+      <div class="hero-ctas">
+        <a href="https://wa.me/917666067507?text=Hi!%20I%20want%20to%20book%20a%20slot" class="btn-gold" target="_blank" rel="noopener">📲 Book on WhatsApp</a>
+        <a href="#waitlist" class="btn-outline">Join Waitlist</a>
+      </div>
     </div>
-
-    <p class="sub">Luxury coworking and art-inspired spaces for creators, innovators, and dreamers.</p>
-
-    <div class="hero-ctas">
-      <a href="https://wa.me/917666067507?text=Hi!%20I%20want%20to%20book%20a%20slot" class="btn-gold" target="_blank" rel="noopener">📲 Book on WhatsApp</a>
-      <a href="#waitlist" class="btn-outline">Join Waitlist</a>
-    </div>
-  </div>
-</section>
-
+  </section>
 
   <section id="about" class="section about">
     <h2>About Us</h2>
@@ -58,6 +57,23 @@
     </div>
   </section>
 
+  <!-- Book section -->
+  <section id="book" class="section book">
+    <h2>Book Your Experience</h2>
+    <p>Reserve a desk, private office, or event space. Instant confirmation on WhatsApp.</p>
+    <p>
+      <a href="https://wa.me/917666067507?text=Hi!%20I%20want%20to%20book%20a%20slot" class="btn-gold" target="_blank" rel="noopener">Book on WhatsApp</a>
+    </p>
+  </section>
+
+  <!-- Waitlist section -->
+  <section id="waitlist" class="section waitlist">
+    <h2>Join the Waitlist</h2>
+    <p>Slots full? Join the waitlist and we’ll notify you when a spot opens.</p>
+    <!-- Replace with your Google Form/Notion link -->
+    <p><a class="btn-outline" href="https://forms.gle/" target="_blank" rel="noopener">Join Waitlist Form</a></p>
+  </section>
+
   <footer class="footer">
     <p>© 2025 Earthly × Nest Space. Crafted for creators.</p>
   </footer>
@@ -65,4 +81,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
