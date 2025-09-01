@@ -8,23 +8,29 @@
 </head>
 <body>
   <header>
-    <h1>🌿 Earthly × Nest Space</h1>
-    <p>Eco-conscious coworking and event spaces with seamless bookings.</p>
+    <img src="https://via.placeholder.com/150x50?text=LOGO" alt="Logo" class="logo"/>
+    <nav>
+      <a href="#book">Book</a>
+      <a href="#about">About</a>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Book Your Spot</h2>
-      <p>Reserve a desk, private office, or event space easily via WhatsApp.</p>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>🌿 Earthly × Nest Space</h1>
+      <p>Eco-conscious coworking and event spaces for creators and innovators.</p>
       <a class="btn" href="https://wa.me/917666067507?text=Hi!%20I%20want%20to%20book%20a%20slot" target="_blank">
         📲 Book on WhatsApp
       </a>
-    </section>
+    </div>
+  </section>
 
-    <section>
+  <main>
+    <section id="about">
       <h2>About Us</h2>
-      <p>Earthly × Nest Space blends eco-friendly design and modern coworking 
-         experiences, supporting startups, creators, and innovators.</p>
+      <p>Earthly × Nest Space blends eco-friendly design with modern coworking vibes. 
+         Whether you need a quiet desk, a private office, or a vibrant event space, 
+         we’ve got you covered.</p>
     </section>
   </main>
 
