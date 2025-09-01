@@ -1,15 +1,18 @@
-// Smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
-  });
-});
+// Pause video on small screens to save bandwidth
+(function(){
+  const video = document.getElementById('heroVideo');
+  if (!video) return;
 
-// Navbar color change on scroll
-window.addEventListener("scroll", () => {
-  const navbar = document.querySelector(".navbar");
-  navbar.classList.toggle("scrolled", window.scrollY > 50);
-});
+  // If device is mobile or connection is slow, pause and show poster
+  const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+  const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+  const slowNetwork = connection && (connection.saveData || /2g/.test(connection.effectiveType || ''));
+
+  if (isMobile || slowNetwork) {
+    try { video.pause(); video.removeAttribute('autoplay'); }
+    catch(e){ /* ignored */ }
+    video.style.display = 'none'; // hides video element, poster will show
+  }
+
+  // accessibility: allow user to toggle sound if needed later (kept muted by default)
+})();
