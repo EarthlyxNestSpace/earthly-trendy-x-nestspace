@@ -1,0 +1,50 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #2f4f4f; /* Earthly tone */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main Sections */
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #2f4f4f;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #228b22; /* Forest green */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #006400; /* Dark green */
+}
+
+/* Footer */
+footer {
+  background: #2f4f4f;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Earthly × Nest Space</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>🌿 Earthly × Nest Space</h1>
+    <p>Eco-conscious coworking and event spaces with seamless bookings.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Book Your Spot</h2>
+      <p>Reserve a desk, private office, or event space easily via WhatsApp.</p>
+      <a class="btn" href="https://wa.me/917666067507?text=Hi!%20I%20want%20to%20book%20a%20slot" target="_blank">
+        📲 Book on WhatsApp
+      </a>
+    </section>
+
+    <section>
+      <h2>About Us</h2>
+      <p>Earthly × Nest Space blends eco-friendly design and modern coworking 
+         experiences, supporting startups, creators, and innovators.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Earthly × Nest Space. All rights reserved.</p>
+  </footer>
+</body>
+</html>
