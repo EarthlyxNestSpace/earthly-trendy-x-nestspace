@@ -1,50 +1,47 @@
-/* General Styles */
+/* Colors from your palette */
+:root {
+  --burgundy: #390517;
+  --gold: #A38560;
+  --deep-green: #16302B;
+  --forest: #03110D;
+  --light-gray: #E0E0E0;
+}
+
 body {
+  background: var(--light-gray);
+  color: var(--forest);
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
 }
 
 /* Header */
 header {
-  background: #2f4f4f; /* Earthly tone */
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+  background: var(--deep-green);
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 15px 30px; position: sticky; top: 0; z-index: 1000;
+}
+header nav a { color: var(--light-gray); margin: 0 15px; text-decoration: none; }
+
+/* Hero Section */
+.hero {
+  background: url('hero-bg.png') center/cover no-repeat;
+  height: 80vh; display: flex; align-items: center; justify-content: center;
+  text-align: center; color: var(--light-gray);
+}
+.hero-content {
+  background: rgba(3, 17, 13, 0.6);
+  padding: 20px; border-radius: 10px;
+  border: 2px solid var(--gold);
 }
 
-/* Main Sections */
-main {
-  padding: 20px;
-}
-
-h2 {
-  color: #2f4f4f;
-}
-
-/* Button */
+/* Buttons */
 .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #228b22; /* Forest green */
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 10px;
+  background: var(--burgundy); color: var(--light-gray);
+  padding: 12px 25px; border-radius: 5px; text-decoration: none; font-weight: bold;
 }
-
-.btn:hover {
-  background: #006400; /* Dark green */
-}
+.btn:hover { background: var(--gold); color: var(--forest); }
 
 /* Footer */
 footer {
-  background: #2f4f4f;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
+  background: var(--forest); color: var(--light-gray); text-align: center; padding: 15px;
 }
