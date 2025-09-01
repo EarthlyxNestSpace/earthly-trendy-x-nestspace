@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Earthly × Nest Space</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="https://via.placeholder.com/150x50?text=LOGO" alt="Logo" class="logo"/>
+  <header class="navbar">
+    <div class="logo">🌿 Earthly × Nest</div>
     <nav>
-      <a href="#book">Book</a>
       <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#book" class="btn-primary">Book Now</a>
     </nav>
   </header>
 
   <section class="hero">
+    <div class="overlay"></div>
     <div class="hero-content">
-      <h1>🌿 Earthly × Nest Space</h1>
-      <p>Eco-conscious coworking and event spaces for creators and innovators.</p>
-      <a class="btn" href="https://wa.me/917666067507?text=Hi!%20I%20want%20to%20book%20a%20slot" target="_blank">
-        📲 Book on WhatsApp
-      </a>
+      <h1 class="luxury-text">A Creative Sanctuary for Visionaries</h1>
+      <p>Luxury coworking and art-inspired spaces for creators, innovators, and dreamers.</p>
+      <a href="https://wa.me/" target="_blank" class="btn-gold">Reserve Your Space</a>
     </div>
   </section>
 
-  <main>
-    <section id="about">
-      <h2>About Us</h2>
-      <p>Earthly × Nest Space blends eco-friendly design with modern coworking vibes. 
-         Whether you need a quiet desk, a private office, or a vibrant event space, 
-         we’ve got you covered.</p>
-    </section>
-  </main>
+  <section id="about" class="section about">
+    <h2>About Us</h2>
+    <p>Earthly × Nest Space blends eco-conscious design with a luxury aesthetic to create inspiring spaces for artists, entrepreneurs, and creators to collaborate, exhibit, and thrive.</p>
+  </section>
 
-  <footer>
-    <p>© 2025 Earthly × Nest Space. All rights reserved.</p>
+  <section id="gallery" class="section gallery">
+    <h2>Featured Spaces</h2>
+    <div class="gallery-grid">
+      <div class="card">Art Studio</div>
+      <div class="card">Event Hall</div>
+      <div class="card">Cozy Corners</div>
+      <div class="card">Private Offices</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Earthly × Nest Space. Crafted for creators.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
