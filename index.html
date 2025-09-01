@@ -10,14 +10,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <!-- Navbar -->
   <header class="navbar">
     <div class="logo">
-      <img src="Logo-Blank1.jpg" alt="Nest Space Ventures Logo" class="logo-small"/>
+      <a href="index.html" aria-label="Earthly × Nest home">
+        <img src="Logo-Blank1.jpg" alt="Nest Space Ventures Logo" class="logo-small" onerror="this.style.display='none'"/>
+      </a>
     </div>
     <nav>
-      <a href="#about">About</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#book" class="btn-primary">Book Now</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="book.html" class="btn-primary">Book Now</a>
     </nav>
   </header>
 
@@ -25,7 +28,7 @@
   <section class="hero hero-video" id="home" aria-label="Hero: Earthly × Nest Space">
     <video class="hero-video__media" autoplay muted loop playsinline poster="hero-bg.png" id="heroVideo">
       <source src="hero.mp4" type="video/mp4" />
-      <!-- fallback image -->
+      <!-- Fallback image for very old browsers -->
       <img src="hero-bg.png" alt="Earthly × Nest Space hero" />
     </video>
 
@@ -37,43 +40,41 @@
 
       <div class="hero-ctas">
         <a href="https://wa.me/917666067507?text=Hi!%20I%20want%20to%20book%20a%20slot" class="btn-gold" target="_blank" rel="noopener">📲 Book on WhatsApp</a>
-        <a href="#waitlist" class="btn-outline">Join Waitlist</a>
+        <a href="book.html" class="btn-outline">View Booking Options</a>
       </div>
     </div>
   </section>
 
-  <section id="about" class="section about">
-    <h2>About Us</h2>
-    <p>Earthly × Nest Space blends eco-conscious design with a luxury aesthetic to create inspiring spaces for artists, entrepreneurs, and creators to collaborate, exhibit, and thrive.</p>
+  <!-- About Teaser -->
+  <section class="section about" aria-labelledby="about-title">
+    <h2 id="about-title">About Us</h2>
+    <p>Earthly × Nest Space blends eco-conscious design with luxury aesthetics to create inspiring spaces where artists, entrepreneurs, and creators collaborate, exhibit, and thrive.</p>
+    <p style="margin-top:1rem;"><a href="about.html" class="btn-outline">Learn More</a></p>
   </section>
 
-  <section id="gallery" class="section gallery">
-    <h2>Featured Spaces</h2>
+  <!-- Featured Spaces -->
+  <section class="section gallery" aria-labelledby="spaces-title">
+    <h2 id="spaces-title">Featured Spaces</h2>
     <div class="gallery-grid">
-      <div class="card">Art Studio</div>
-      <div class="card">Event Hall</div>
-      <div class="card">Cozy Corners</div>
-      <div class="card">Private Offices</div>
+      <a href="art-studio.html" class="card"><span>Art Studio</span></a>
+      <a href="event-hall.html" class="card"><span>Event Hall</span></a>
+      <a href="cozy-corners.html" class="card"><span>Cozy Corners</span></a>
+      <a href="private-offices.html" class="card"><span>Private Offices</span></a>
     </div>
+    <p style="margin-top:1.25rem;"><a href="gallery.html" class="btn-outline">Explore Gallery</a></p>
   </section>
 
-  <!-- Book section -->
-  <section id="book" class="section book">
-    <h2>Book Your Experience</h2>
+  <!-- Book CTA -->
+  <section class="section book" aria-labelledby="book-title">
+    <h2 id="book-title">Book Your Experience</h2>
     <p>Reserve a desk, private office, or event space. Instant confirmation on WhatsApp.</p>
-    <p>
+    <p style="margin-top:1rem;">
       <a href="https://wa.me/917666067507?text=Hi!%20I%20want%20to%20book%20a%20slot" class="btn-gold" target="_blank" rel="noopener">Book on WhatsApp</a>
+      <a href="book.html" class="btn-outline" style="margin-left:.5rem;">See All Options</a>
     </p>
   </section>
 
-  <!-- Waitlist section -->
-  <section id="waitlist" class="section waitlist">
-    <h2>Join the Waitlist</h2>
-    <p>Slots full? Join the waitlist and we’ll notify you when a spot opens.</p>
-    <!-- Replace with your Google Form/Notion link -->
-    <p><a class="btn-outline" href="https://forms.gle/" target="_blank" rel="noopener">Join Waitlist Form</a></p>
-  </section>
-
+  <!-- Footer -->
   <footer class="footer">
     <p>© 2025 Earthly × Nest Space. Crafted for creators.</p>
   </footer>
